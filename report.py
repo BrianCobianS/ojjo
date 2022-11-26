@@ -1,5 +1,6 @@
 def readfile(x):
     ban =0
+    level= ''
     contenido = open(x).read().splitlines()
     for line in contenido:
         line.strip()
