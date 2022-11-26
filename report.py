@@ -3,7 +3,7 @@ def readfile(x):
     contenido = open(x).read().splitlines()
     for line in contenido:
         line.strip()
-        if '1-1' in line or ban=1:
+        if '1-1' in line or ban==1:
             ban=1
             level = level +line
             print(line)
