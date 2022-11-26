@@ -16,7 +16,7 @@ class ReportModuleLevel:
         i = 0
         while linecache.getline(REPORT_FILE, 3+(13*i)) is not '':
 
-            this_product_name_line = linecache.getline(REPORT_FILE, 3+(13*i))
+            this_product_name_line = linecache.getline(REPORT_FILE, 3+(13))
             this_product_status_line = linecache.getline(REPORT_FILE, 4+(13*i))
             this_product_pid_line = linecache.getline(REPORT_FILE, 5+(13*i))
             this_product_cd_line = linecache.getline(REPORT_FILE, 6+(13*i))
