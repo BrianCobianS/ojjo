@@ -32,7 +32,7 @@ class ReportModuleLevel:
             print ("\n" +this_product_status_line[13:80])
             print ("\n" +this_product_pid_line[13:80])
             print ("\n" +this_product_cd_line[13:80])
-            print ("\n" +this_product_release_line[13:80])
+            print ("Este es el realeseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" +this_product_release_line[13:80])
             print ("\n" +this_product_base_level_line[13:80])
             print ("\n" +this_product_date_applied_line[13:80])
             print ("\n" +this_product_ptf_line[13:80])
