@@ -9,3 +9,4 @@ def controller(host,user,password):
     f = open('Inventories/import_inventory.yml', "w")
     f.writelines("\n".join(contenido))
 
+controller('10.89.105.98','master','m1')
