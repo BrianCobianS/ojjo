@@ -1,0 +1,19 @@
+--- 
+- name: Run python to creaate RCP
+  command: python generate_rml_rcp_cmd.py -p AG
+  args:
+      chdir: "{{landing_zone}}"
+
+- name: Run python to Run the RCP Job
+  command: "run4690 -npp command.286 -c adxcsh0l backgrnd nnnn"
+  args:
+      chdir: "{{landing_zone}}"
+  register: bckgrn
+  ignore_errors: true
+
+- name: Print RML
+  command: python print_report_module_levels.py
+  args:
+      chdir: "{{landing_zone}}"
+  register: RML
+  ignore_errors: true
