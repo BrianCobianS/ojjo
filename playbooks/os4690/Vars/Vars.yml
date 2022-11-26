@@ -1,0 +1,78 @@
+## SETUP ## PATHS ##
+landing_zone: /home/vxuser/Landing/
+config_dir: "{{(role_configuration_directory|default(role_path)) +'/files/'}}"
+iso_local_path: "/4690imgsr/{{release|lower}}/{{sp_level}}/cdimgs"
+iso_local_path_ace: "/acebld/jedi/Levels/j250/ace/ACEfltCD"
+
+## FTP SERVER CREDENTIALS ##
+pass_ftp_server: "P_elevate#99"
+ftp_ip_server: "10.89.182.13"
+## FTP SERVER CREDENTIALS ##
+pass_ftp_server2: ""
+ftp_ip_server2: "10.89.159.30"
+
+## C: ## PATHS ##
+c_drive: "/mnt/c/"
+c_adx_imnt: "/mnt/c/adx_imnt/"
+c_adx_spgm: "/mnt/c/adx_spgm/"
+c_adx_sdt1: "/mnt/c/adx_sdt1/"
+c_adx_idt1: "/mnt/c/adx_idt1/"
+c_adx_upgm: "/mnt/c/adx_upgm/"
+c_adx_ipgm: "/mnt/c/adx_ipgm/"
+c_adx_ibul: "/mnt/c/adx_ibul/"
+
+## F: ## PATHS ##
+f_drive: /mnt/f/
+f_drive_bb: /cdrive/f_drive/
+zip_4690: adxetc/java/lib/os4690.zip
+
+## P: ## PATHS ##
+p_drive: /mnt/p/
+
+## E: ## USB ## PATHS ##
+usb_0_4690: "e:/000"
+usb_0: "/mnt/e/000/"
+
+## INSTALLATION ##
+confxml: "confinst.xml"
+biosfile_path: "/mnt/f/adxetc/bios/4900785.250.sh"
+id: SS
+root_ssh_ext: adxxtsbv.dat
+root_ssh_bat: inbvtcmd.bat
+
+## DUMP ## TEST ##
+dump_file: "C:/adx_sdt1/ADXE{{mctrl_id}}CF.DAT"
+
+## DNS ## TEST ##
+dns_config_line: "nameserver 8.8.8.8"
+dns_config_file: /mnt/c/adx_sdt1/adxhsirf.dat
+
+
+## PYTHON ## FRAMEWORK ##
+framework_name: Robot-Dev_MARS_RegressionRefactor_1
+
+## COMMANDS ##
+run_4690: "run4690 -npp command.286 -c"
+run_4690_f: "run4690 -cd:f: -npp command.286 -c"
+
+## PYTHON ## COMMANDS
+python_reboot_controller: python -c "import os4690.adxserve as a; a.rebootController()"
+
+## NEXUS ##
+nexus_url: http://10.89.100.126:8081
+nexus_url2: http://10.89.110.62:28081
+nexus_username: 4690jenkins
+nexus_password: P_elevate#99
+nexus_userpass: "{{nexus_username}}:{{nexus_password}}"
+
+## CONTROLLER EXTENSIONS ##
+docker: "ADXXTSDK.DAT"
+gtk: "ADXXTSGT.DAT"
+mbrowser: "ADXXTSFF.DAT"
+postgreSQL: "ADXXTSPG.DAT" 
+tdk8: "ADXXTSJ8.DAT"
+
+## NETOP ##
+netop_version: toshiba-rev_d0ff71447-build12.79-2019.270.tar.gz
+
+## LEVEL ##

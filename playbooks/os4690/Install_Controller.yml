@@ -1,0 +1,9 @@
+---
+## Include Role##
+- hosts: mfs
+  tasks:
+  - include_role:
+      name: installation
+      tasks_from: main.yml
+  vars_files:
+    - Vars/Vars.yml
