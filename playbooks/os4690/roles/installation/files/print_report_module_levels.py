@@ -28,7 +28,7 @@ class ReportModuleLevel:
             this_product_divider_line = linecache.getline(REPORT_FILE, 13+(13*i))
 
             # Print out list of products and status from the report
-            print ("\n" + this_product_name_line[:40] +this_product_status_line[13:80] +this_product_pid_line[13:80] + this_product_cd_line[13:80] + this_product_release_line[13:80])
+            print ("1-1" + this_product_name_line[:40] +this_product_status_line[13:80] +this_product_pid_line[13:80] + this_product_cd_line[13:80] + this_product_release_line[13:80])
             print ("\n" +this_product_base_level_line[13:80])
             print ("\n" +this_product_date_applied_line[13:80])
             print ("\n" +this_product_ptf_line[13:80])
