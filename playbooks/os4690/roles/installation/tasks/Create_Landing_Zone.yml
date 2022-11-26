@@ -1,0 +1,26 @@
+##########################################
+## Create Directory If It Does Not Exist.
+## Required variables:
+## - landing_zone
+##########################################
+
+---
+- name: Check Landing Zone Exist
+  stat:
+    path: "{{landing_zone}}"
+  register: lz
+
+- name: Cleanning the landing zone
+  shell: "rm -r {{landing_zone}}"
+  when: lz.stat.exists
+
+- name: Check Landing Zone Exist
+  stat:
+    path: "{{landing_zone}}"
+  register: lz2
+
+- name: Create Directory If It Does Not Exist
+  file:
+    path: "{{landing_zone}}"
+    state: directory
+  when: not lz2.stat.exists

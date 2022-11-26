@@ -1,3 +1,13 @@
+- name: Create Landing Zone
+  include_role:
+    name: installation
+    tasks_from: Create_Landing_Zone.yml
+
+- name: Copy Files In Landing Zone
+  copy:
+    src: "{{item}}"
+    dest: "{{landing_zone}}"
+  with_fileglob: "{{config_dir}}/*.*"
 
 - name: Report Module Level.
   include_role:
