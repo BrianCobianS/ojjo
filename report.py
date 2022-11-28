@@ -32,6 +32,8 @@ def readfile(x):
                         backup=x
                         print('Backup Level = '+backup)
                         break
+        if current != '' and maintenance != '' and backup != '':
+            break
             # print(line)
     return level
 a=readfile('temp.txt')
