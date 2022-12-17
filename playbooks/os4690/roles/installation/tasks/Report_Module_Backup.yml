@@ -19,7 +19,7 @@
   ignore_errors: true
 
 - name: Copy Files In Landing Zone
-  anisble.builtin.copy:
+  ansible.builtin.copy:
     src: "{{c_adx_sdt1}}adxcssdf.dat"
     dest: /home/ebossteam/RML/ojjo/
     owner: ebossteam
