@@ -19,7 +19,8 @@
   ignore_errors: true
 
 - name: Copy Files In Landing Zone
-  copy:
+  anisble.builtin.copy:
     src: "{{c_adx_sdt1}}adxcssdf.dat"
-    dest: "{{config_dir}}"
-    remote_src: true
+    dest: /home/ebossteam/RML/ojjo/
+    owner: ebossteam
+    mode: '0644'
