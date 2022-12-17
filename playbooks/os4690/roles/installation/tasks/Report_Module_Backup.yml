@@ -22,4 +22,4 @@
   copy:
     src: "{{c_adx_sdt1}}adxcssdf.dat"
     dest: "{{config_dir}}popis.txt"
-  remote_src: true
+    remote_src: true
