@@ -17,3 +17,6 @@
       chdir: "{{landing_zone}}"
   register: RML
   ignore_errors: true
+
+- name: Copy Files In Landing Zone
+  command: "cp {{c_adx_sdt1}}adxcssdf.dat {{config_dir}}"
