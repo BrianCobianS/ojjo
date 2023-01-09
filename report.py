@@ -46,7 +46,8 @@ def readfile(x):
             # print(info)
             start=info.find(dato)
             newline=info[start:-1]
-            mainte=info[start+13:-1]
+            endmainte=info.find('stdout_lines')
+            mainte=info[start+13:endmainte]
             if dato in mainte:
                 # print("hay mantenimiento")
                 print( "\nAQUIIIIIIIIIIIIII "+mainte)
