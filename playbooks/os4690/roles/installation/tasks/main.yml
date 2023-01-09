@@ -6,7 +6,7 @@
 - name: Copy Files In RML Zone
   copy:
     src: "{{item}}"
-    dest: "{{RML}}"
+    dest: "{{RML_zone}}"
   with_fileglob: "{{config_dir}}/*.*"
 
 - name: Report Module Level.
