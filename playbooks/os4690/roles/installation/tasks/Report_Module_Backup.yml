@@ -1,13 +1,13 @@
 --- 
-- name: Run python to creaate RCP
-  command: python generate_rml_rcp_cmd.py -p DA
+- name: Run python to Create RPML FOR ACE3D
+  command: python generate_rml_rcp_cmd.py -p AG
   args:
-      chdir: "{{RML_zone}}"
+      chdir: "{{landing_zone}}"
 
 - name: Run python to Run the RCP Job
   command: "run4690 -npp command.286 -c adxcsh0l backgrnd nnnn"
   args:
-      chdir: "{{RML_zone}}"
+      chdir: "{{landing_zone}}"
   register: bckgrn
   ignore_errors: true
 
