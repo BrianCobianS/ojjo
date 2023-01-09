@@ -17,11 +17,3 @@
       chdir: "{{RML_zone}}"
   register: RML
   ignore_errors: true
-
-- name: Copy Files In RML Zone
-  ansible.builtin.copy:
-    src: "{{c_adx_sdt1}}adxcssdf.dat"
-    dest: /home/ebossteam/RML/ojjo/
-    owner: ebossteam
-    mode: '0644'
-    remote_src: true
