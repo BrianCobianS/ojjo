@@ -49,7 +49,7 @@ def readfile(x):
             mainte=info[start+13:-1]
             if dato in mainte:
                 # print("hay mantenimiento")
-                print( mainte)
+                print( "\nAQUIIIIIIIIIIIIII "+mainte)
                 startm = mainte.find(dato)
                 newlinem=mainte[startm:-1]
                 endm=newlinem.find("\\n")
