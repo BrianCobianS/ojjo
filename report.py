@@ -79,7 +79,7 @@ def readfile(x):
         m += 1
         
         
-a=readfile('prueba.txt')
+a=readfile('temp.txt')
 
 
 
