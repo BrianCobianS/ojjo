@@ -1,5 +1,5 @@
 ## SETUP ## PATHS ##
-landing_zone: /home/vxuser/Landing/
+RML_zone: /home/vxuser/RML/
 config_dir: "{{(role_configuration_directory|default(role_path)) +'/files/'}}"
 iso_local_path: "/4690imgsr/{{release|lower}}/{{sp_level}}/cdimgs"
 iso_local_path_ace: "/acebld/jedi/Levels/j250/ace/ACEfltCD"
