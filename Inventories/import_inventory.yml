@@ -4,7 +4,7 @@ all:
       children:
         mfs:
           hosts:
-            10.89.105.98
+            10.89.104.178
       vars:
         ansible_connection: ssh
         ansible_user: master
