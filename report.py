@@ -17,7 +17,7 @@ def readfile(x):
     "Emergency_Fix" : "",
     "Release" : ""
     }
-    
+    info=""
     Data=["PID","SP/Build", "Release","Base level" , "Date applied", "PTF" , "Emergency Fix", ]
     contenido = open(x).read().splitlines()
     for line in contenido:
