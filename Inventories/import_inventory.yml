@@ -4,9 +4,9 @@ all:
       children:
         mfs:
           hosts:
-            10.89.105.98
+            10.89.104.178
       vars:
         ansible_connection: ssh
         ansible_user: master
-        ansible_ssh_pass: m1
+        ansible_ssh_pass: test2
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no -o RequestTTY=yes"

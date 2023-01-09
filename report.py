@@ -6,7 +6,8 @@ def readfile(x):
     "Date applied" : "",
     "PTF" : "",
     "Emergency_Fix" : "",
-    "Release" : ""
+    "Release" : "",
+    "Product" : ""
     }
     MLM = {
     "PID" : "",
@@ -15,10 +16,12 @@ def readfile(x):
     "Date applied" : "",
     "PTF" : "",
     "Emergency_Fix" : "",
-    "Release" : ""
+    "Release" : "",
+    "Product" : ""
     }
+    
     info=""
-    Data=["PID","SP/Build", "Release","Base level" , "Date applied", "PTF" , "Emergency Fix", ]
+    Data=[ "PID","SP/Build", "Release","Base level" , "Date applied", "PTF" , "Emergency Fix", "Product"]
     contenido = open(x).read().splitlines()
     for line in contenido:
         line.strip()
