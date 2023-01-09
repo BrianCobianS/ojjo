@@ -1,6 +1,6 @@
 --- 
 - name: Run python to creaate RCP
-  command: python generate_rml_rcp_cmd.py -p {{product}}
+  command: python generate_rml_rcp_cmd.py -p AI
   args:
       chdir: "{{RML_zone}}"
 
