@@ -78,7 +78,7 @@ def readfile(x):
         
         
         
-a=readfile('temp.txt')
+a=readfile('/home/ebossteam/RML/ojjo/temp.txt')
 
 
 
