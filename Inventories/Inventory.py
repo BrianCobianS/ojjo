@@ -11,7 +11,7 @@ def controller(host,user,password):
     contenidoexcec.insert(2,"ansible-playbook  /home/ebossteam/RML/ojjo/playbooks/os4690/Install_Controller.yml -v -i /home/ebossteam/RML/ojjo/Inventories/import_inventory.yml -e 'product="+Product+"' 2>&1 | tee  /home/ebossteam/RML/ojjo/temp.txt")
     contenidoexcec.insert(3,"python3  /home/ebossteam/RML/ojjo/report.py")
     f = open('/home/ebossteam/RML/ojjo/excecuteme.sh', "w")
-    f.writelines("\n".join(contenido))
+    f.writelines("\n".join(contenidoexcec))
     f.close
     #contenido = open("./Inventories/template.txt").read().splitlines()
     contenido = open("/home/ebossteam/RML/ojjo/Inventories/template.txt").read().splitlines()
